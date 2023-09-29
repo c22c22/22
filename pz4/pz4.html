@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Розклад занять</title>
+	<style>
+		body {
+            background-image: url('fon.jpg');
+            background-size: cover;           
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 3px;
+			color: #FF0000;
+			font-weight: bold;
+        }
+
+        form {
+            background-color: rgba(41, 29, 171, 1);
+            padding: 50px;
+            border-radius: 100px;           
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="submit"] {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;                                
+        }
+		
+		.main {
+		width: auto;
+		padding: 0;
+		display: flex;
+		justify-content: space-between;
+		}
+		
+		.reg {
+		width: 300px;
+		margin: 0;
+		padding: 0;
+		}
+		
+		.table {
+		margin: 0;
+		padding: 0;
+		width: 600px;
+		}
+		
+		table {
+		background-color: white;
+		}
+		
+		table p {
+		margin: 0;
+		padding: 0;
+		color: black;
+		}
+		
+		.red {
+		background-color: red;
+		}
+		
+		.yellow {
+		background-color: yellow;
+		}
+		
+		.green {
+		background-color: green;
+		}
+		.orange{
+		background-color: orange;
+		}
+	</style>
+</head>
+<body>
+    <h1>18.09-24.09</h1>
+	<div class="main">
+		<div class="table">
+			<table border="1">
+				<tr>		
+					<th>День</th>
+					<th>8:30-10:05</th>
+					<th>10:25-12:00-</th>
+					<th>12:20-13:55</th>
+					<th>16:20-17:45</th>
+				</tr>
+				<tr>
+					<td>Понеділок</td>
+					<td class="yellow">
+						<p>TC</p>
+						<p>310</p>
+					</td>
+					<td class="yellow">
+						<p>ТІК</p>
+						<p>105</p>
+					</td>
+					<td class="orange">
+						<p>Право</p>
+						<p>417</p>
+					</td>
+					<td class="red">
+						<p>СР</p>
+						<p>101</p>
+					</td>
+				</tr>
+				<tr>       
+					<td>Вівторок</td>
+					<td class="yellow">
+						<p>ЗВП</p>
+						<p>006</p>
+					</td>
+					<td class="red">
+						<p>СР</p>
+						<p>101</p>
+					</td>
+					<td class="yellow">
+						<p>ЗВП</p>
+						<p>006</p>
+					</td>
+					<td class="red">
+						<p>СР</p>
+						<p>101</p>
+					</td>			
+				</tr>
+				<tr>
+					<td>Середа</td>
+					<td class="yellow">
+						<p>ТІМ</p>
+						<p>101</p>
+					</td>
+					<td class="green">
+						<p>ТС</p>
+						<p>310</p>
+					</td>
+					<td class="orange">
+						<p>ФВ</p>
+						<p>парк</p>
+					</td>
+					<td class="red">
+						<p>СР</p>
+						<p>101</p>
+					</td>
+				</tr>
+				<tr>
+					<td>Четвер</td>
+					<td class="orange">
+						<p>ФВ</p>
+						<p>парк</p>
+					</td>
+					<td class="yellow">
+						<p>Прогр</p>
+						<p>503</p>
+					</td>
+					<td class="orange">
+						<p>ТІК</p>
+						<p>105</p>
+					</td>
+					<td class="red">
+						<p>СР</p>
+						<p>101</p>
+					</td>
+				</tr>
+				<tr>
+					<td>П'ятниця</td>
+					<td class="orange">
+						<p>ФВ</p>
+						<p>парк</p>
+					</td>
+					<td class="yellow">
+						<p>ТІМ</p>
+						<p>101</p>
+					</td>
+					<td class="red">
+						<p>СР</p>
+						<p>101</p>
+					</td>
+					<td class="red">
+						<p>СР</p>
+						<p>101</p>
+					</td>
+				</tr>
+				<tr>
+					<td>Субота</td>
+					<td class="red">
+						<p>СР</p>
+						<p>101</p>
+					</td>
+					<td class="red">
+						<p>СР</p>
+						<p>101</p>
+					</td>
+					<td class="orange">
+						<p>Прогр</p>
+						<p>503</p>
+					</td>
+					<td class="red">
+						<p>СР</p>
+						<p>101</p>
+					</td>			
+				</tr>		
+			</table>
+			<div class="pic">
+				<img src="1.png" alt="Логотип" style="max-width: 200px; margin-t: 20px; float: left;">
+			</div>	
+		</div>
+		<div class="reg">
+			<h2>Реєстрація</h2>
+			<form action="#" method="POST">
+				<label for="ім'я" >Ім'я:</label>
+				<input type="text" name="ім'я" required><br>
+
+				<label for="фамілія">Фамілія:</label>
+				<input type="text" name="фамілія" required><br>
+
+				<label for="email">Електронна пошта:</label>
+				<input type="email" name="email" required><br>
+
+				<label for="пароль">Пароль:</label>
+				<input type="password" name="пароль" required><br>
+
+				<label for="підтвердження_пароля">Підтвердження пароля:</label>
+				<input type="password" name="підтвердження_пароля" required><br>
+
+				<input type="submit" value="Зареєструватися">
+			</form>
+		</div>
+	</div>
+</body>
+</html>
