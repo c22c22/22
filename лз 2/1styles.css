@@ -1,0 +1,71 @@
+/* Стилі для горизонтальної панелі навігації */
+body {
+    background-image: url('55.jpg'); /* Замініть 'background.jpg' на URL вашої картинки */
+    background-size: cover;
+    background-repeat: no-repeat;
+	
+}
+.horizontal-navigation {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFDAB9;
+    padding: 10px;
+    margin: 0;
+}
+
+.horizontal-navigation li {
+    margin: 0;
+    padding: 0;
+}
+
+.horizontal-navigation li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.horizontal-navigation li a:hover {
+    background-color: #555;
+}
+
+.design-element {
+    margin-left: 10px;
+}
+
+/* Стилі для вертикальної панелі навігації */
+.vertical-navigation {
+    background-color: #FFDAB9;
+    width: 200px;
+    padding: 10px;
+}
+
+.vertical-navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+.vertical-navigation li {
+    margin: 0;
+    padding: 0;
+}
+
+.vertical-navigation li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.vertical-navigation li a:hover {
+    background-color: #555;
+}
+
+/* Стилі для елемента дизайну */
+.design-element img {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+}
